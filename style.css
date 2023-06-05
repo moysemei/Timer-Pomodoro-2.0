@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --bg-card-color: #E1E1E6;
+  --bg-selectedcard-color: #02799D;
+
+  --text-color: #323238;
+
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  align-self: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+#controls button {
+  margin-right: 4rem;
+}
+
+#moodControls {
+  display: grid;
+  align-self: center;
+  grid-template-columns: 1fr 1fr;
+
+  margin-left: 19.2rem;
+
+  gap: 3.2rem;
+}
+
+#moodControls button {
+  background-color: var(--bg-card-color);
+
+  border-radius: 2.4rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
+
+  display: flex;
+}
+
+.rain svg path{
+  fill: var(--text-color);
+}
+
+.selected {
+  background-color: var(--bg-selectedcard-color) !important;
+}
+
+.selected svg path{
+  fill: var(--bg-color)
+}
